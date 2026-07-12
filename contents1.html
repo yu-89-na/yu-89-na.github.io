@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>イラストデザイン制作ノート</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デザインのポイント | イラストデザイン制作ノート</title>
     <link rel="stylesheet" href="css/mystyle.css">
 </head>
 
@@ -17,53 +18,89 @@
             <nav>
                 <ul>
                     <li><a href="index.html">トップ</a></li>
-                    <li><a href="contents1.html"> デザインのポイント</a></li>
-                    <li> <a href="contents2.html"> 過去作品</a></li>
-                    <li> <a href="contents3.html"> サイト案内</a></li>
-                    <li> <a href="contents4.html"> お問い合わせ</a></li>
+                    <li><a href="contents1.html" class="active">デザインのポイント</a></li>
+                    <li><a href="contents2.html">過去作品</a></li>
+                    <li><a href="contents3.html">サイト案内</a></li>
+                    <li><a href="contents4.html">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- パンくずリスト -->
-    <ol>
-        <li><a href="index.html">トップ</a></li>
-        <li></li>
-        <li>コンテンツ1</li>
-    </ol>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">トップ</a></li>
+            <li>デザインのポイント</li>
+        </ol>
+    </nav>
 
+    <main class="page">
+        <article>
+            <h1>デザインの基本と制作の流れ</h1>
 
-    <article class="page">
+            <section class="intro-section">
+                <img src="image/背景.png" width="300" class="float-img" alt="制作イメージイラスト">
+                <p>
+                    魅力的なイラストやデザインを制作するためには、直感だけでなく、構図・色彩・質感といった理論的な要素を掛け合わせることが重要です。ここでは、作品のクオリティを一段引き上げるための重要なポイントと、実際の制作プロセスの流れを詳しく解説します。
+                </p>
+                <div class="clear"></div>
+            </section>
 
-        <h1>デザインの基本と制作の流れ</h1>
+            <section class="design-points">
+                <h2>デザインの重要ポイント</h2>
+                <p>制作時に常に意識すべき、基礎となる4つのアプローチです。</p>
 
-        <!-- float 画像 -->
-        <img src="image/背景.png" width="300" class="float-img">
+                <ul class="point-list">
+                    <li>
+                        <strong>視線誘導を意識した構図</strong><br>
+                        「Zの法則」や「三分割法」などを活用し、見る人の視線を最も見せたい主役に自然と導く配置を計算します。
+                    </li>
+                    <li>
+                        <strong>テーマに合わせた色彩設計</strong><br>
+                        作品の持つ世界観や感情に合わせ、ベースカラー・メインカラー・アクセントカラーの比率（70:25:5）を意識して配色します。
+                    </li>
+                    <li>
+                        <strong>質感表現の統一</strong><br>
+                        アナログ風のブラシ感、アニメ調の滑らかな塗りなど、画面全体のブラシやテクスチャの質感を統一することで世界観が強まります。
+                    </li>
+                    <li>
+                        <strong>情報量の整理と強弱（コントラスト）</strong><br>
+                        主役にはディテールを細かく描き込み、背景や周辺要素はあえて描き込みを抑えることで、画面にメリハリ（粗密）を作ります。
+                    </li>
+                </ul>
+            </section>
 
-        <p>
-            デザイン制作では構図・色彩・質感など多くの要素が関わります。ここでは制作の流れやポイントを詳しく解説します。
-        </p>
+            <section class="production-flow">
+                <h2>イラストデザイン制作の流れ</h2>
 
-        <div class="clear"></div>
+                <ol class="flow-list">
+                    <li>
+                        <h3>1. ヒアリング・コンセプト設計</h3>
+                        <p>「誰に」「何を」伝えるための作品なのか、目的やテーマ、ターゲット層を明確にし、全体の方向性を固めます。</p>
+                    </li>
+                    <li>
+                        <h3>2. アイデアスケッチ・ラフ制作</h3>
+                        <p>構図や配置のパターンをいくつか大まかに描き出し、全体のシルエットや視線誘導のラインを検証します。</p>
+                    </li>
+                    <li>
+                        <h3>3. カラーラフ・配色決定</h3>
+                        <p>線画を描き進める前に、ざっくりと色を乗せて画面全体の明暗（コントラスト）や色のバランスをチェックします。</p>
+                    </li>
+                    <li>
+                        <h3>4. 本制作（線画・塗り・仕上げ）</h3>
+                        <p>ディテールを描き込み、質感を与えていきます。最後にエフェクトや色調補正を行い、空気感やクオリティを仕上げます。</p>
+                    </li>
+                </ol>
+            </section>
 
-        <h2>デザインのポイント</h2>
-        <ul class="point-list">
-            <li>視線誘導を意識した構図</li>
-            <li>テーマに合わせた色彩設計</li>
-            <li>質感表現の統一</li>
-            <li>情報量の整理と強弱</li>
-        </ul>
-
-        <p class="sentou"><a href="#top">▲ 先頭へ戻る</a></p>
-
-    </article>
+            <p class="sentou"><a href="#top">▲ 先頭へ戻る</a></p>
+        </article>
+    </main>
 
     <footer>
-        <small>&copy;2026 yu.
-            本作品の著作権は著作者に帰属します。
-            許可なき利用・転載・改変を禁止します。    
-        </small>
+        <div class="footer-in">
+            <p><small>&copy;2026 yu. 本作品の著作権は著作者に帰属します。許可なき利用・転載・改変を禁止します。</small></p>
+        </div>
     </footer>
 </body>
 
